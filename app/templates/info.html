@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BCCALPTV</title>
+    <link rel="stylesheet" href="{% static "styles.css" %}">
+  </head>
+  <body>
+    <div class="header">
+      <a href="/"><img src="{% static "bcca_logo.png" %}" alt="bcca logo"></a>
+    </div>
+
+    <div class="content" id="name">
+      <h1><strong>{{ team_name }}</strong></h1>
+    </div>
+
+    <div class="content" id="disc">
+      {% for key, value in content.items %} {% if key == team_name %}
+      <p>{{ value.description }}</p>
+    </div>
+
+    <div class="content" id="memb">
+      <ul>
+        {% for member in value.members %} {% if "Joshua" in member %}
+        <li>
+          <a
+            href="https://joshuagirff.github.io/my_portfolio/#about_me"
+            target="_blank"
+            >{{ member }}</a
+          >
+        </li>
+        {% else %}
+        <li>{{ member }}</li>
+        {% endif %} {% endfor %}
+      </ul>
+      {% endif %} {% endfor %}
+    </div>
+  </body>
+</html>

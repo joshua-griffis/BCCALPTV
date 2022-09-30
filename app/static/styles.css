@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    height: fit-content;
+    background-color: white;
+  }
+  
+
+ 
+  .header {
+    display: flex;
+    justify-content: center;
+  }
+  .header img{
+    height: 18em;
+    width: 38em;
+    display: flex;
+    justify-self: center;
+    border-radius: 2em;
+    padding-right: 1em;
+    padding-left: 1em;
+    margin-top: 2em;
+    transition: .5s;
+  }
+
+  .header img:hover {
+    box-shadow: 0px 0px 40px rgb(129, 212, 242);
+    transition: .5s;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 4px;
+    padding: 0;
+    position: sticky;
+    top: 0;
+  }
+  
+  .liszt {
+    overflow: hidden;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .liszt button {
+    background-color: rgb(129, 212, 242);
+    color: white;
+    letter-spacing: .5em;
+    font-size: large;
+    text-shadow: 0px 0px 5px white;
+    text-align: center;
+    padding: 1em;
+    border-radius: 1em;
+    margin: 1em;
+    border: 0em;
+    transition: .5s;
+  }
+  
+  .liszt button:hover {
+    background-color: white;
+    background-position: center;
+    color: rgb(129, 212, 242);
+    box-shadow: 0px 0px 10px rgb(129, 212, 242);
+    transition: .5s;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: center;
+    padding-left: 3em;
+    padding-right: 3em;
+    letter-spacing: .2em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 0px 5px white;
+    font-size: larger;
+    color: rgb(96, 56, 19);
+  }
+  
+  #name {font-family: 'Courier New', Courier, monospace; color:rgb(129, 212, 242)}
+  #memb {margin-bottom: 3em;}
